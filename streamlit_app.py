@@ -9,7 +9,9 @@ from tensorflow import image
 #Function
 @st.cache_resource()
 def load_model():
-  model = tf.keras.models.load_model("Trained_model.keras")
+  uploaded_file = st.file_uploader("Upload Model", type=["keras"])
+  if uploaded_file is not None:
+      model = tf.keras.models.load_model(uploaded_file)
   return model
 
 
