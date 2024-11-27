@@ -1,5 +1,5 @@
 tensorflow
 defusedxml
-streamlit==1.25.0
+streamlit
 numpy>=1.24.2
 pandas
