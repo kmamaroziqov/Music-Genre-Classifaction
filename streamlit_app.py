@@ -9,7 +9,7 @@ from tensorflow import image
 #Function
 @st.cache_resource()
 def load_model():
-  model = tf.keras.models.load_model("Trained_model.keras")
+  model = tf.keras.models.load_model("Trained_model.h5")
   return model
 
 
